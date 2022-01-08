@@ -15,7 +15,6 @@ def chart():
                            graphJSON_bar = graphJSON_bar,
                            graphJSON_cum = graphJSON_cum)
 
-
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
