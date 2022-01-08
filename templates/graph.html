@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body style="background: #000;">
+    <h1>{{header}}</h1>
+
+    <a href="results" class="btn">Go back and cluster again</a>
+
+    <div id="chart_bar" class="chart"></div>
+    <div id="chart_cum" class="chart"></div>
+    <div>{{description_1}}</div>
+    <div>{{description_2}}</div>
+
+<div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs = {{graphJSON_bar | safe}};
+    Plotly.plot('chart_bar',graphs,{});
+</script>
+</div>
+
+<div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs = {{graphJSON_cum | safe}};
+    Plotly.plot('chart_cum',graphs,{});
+</script>
+</div>
+
+
+</body>
+</html>
