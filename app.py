@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def chart():
-    path = 'data/event_1.xlsx'
+    path = 'data/event1.xlsx'
     df = load_data(path)
 
     graphJSON_bar = plot_bar_chart(df)
