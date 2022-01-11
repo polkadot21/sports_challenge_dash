@@ -27,8 +27,8 @@ def plot_bar_chart(df):
     traces = []
     teams = df.columns.to_list()[1:]
     fig = go.Figure()
-    fig.update_layout(width=1400,
-                               height=600,
+    fig.update_layout(width=800,
+                               height=400,
                                template=pio.templates['plotly_white'],
                                title="Daily results of Event 1")
 
@@ -55,8 +55,8 @@ def plot_cum_chart(df):
 
     traces = []
     fig = go.Figure()
-    fig.update_layout(width=1400,
-                               height=600,
+    fig.update_layout(width=800,
+                               height=400,
                                template=pio.templates['plotly_white'],
                                title="Overall results after Event 1")
 
