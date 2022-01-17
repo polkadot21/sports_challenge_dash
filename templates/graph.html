@@ -9,23 +9,13 @@
 
 </head>
 <body style="background: #000;">
-    <div id="chart_bar" class="chart"></div>
     <div id="chart_cum" class="chart"></div>
-<div>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script type="text/javascript">
-    var graphs = {{graphJSON_bar | safe}};
-    Plotly.plot('chart_bar',graphs,{});
-</script>
-</div>
 
-<div>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script type="text/javascript">
     var graphs = {{graphJSON_cum | safe}};
     Plotly.plot('chart_cum',graphs,{});
 </script>
-</div>
 
 
 </body>

@@ -8,11 +8,11 @@ def chart():
     path = 'data/event1.xlsx'
     df = load_data(path)
 
-    graphJSON_bar = plot_bar_chart(df)
+    #graphJSON_bar = plot_bar_chart(df)
     graphJSON_cum = plot_cum_chart(df)
 
     return render_template('graph.html',
-                           graphJSON_bar = graphJSON_bar,
+                           #graphJSON_bar = graphJSON_bar,
                            graphJSON_cum = graphJSON_cum)
 
 # Run the app
