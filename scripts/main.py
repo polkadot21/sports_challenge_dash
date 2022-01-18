@@ -55,8 +55,8 @@ def plot_cum_chart(df):
 
     traces = []
     fig = go.Figure()
-    fig.update_layout(width=900,
-                               height=500,
+    fig.update_layout(width=1100,
+                               height=1800,
                                template=pio.templates['plotly_white'],
                                title="Overall results after Event 1")
 
