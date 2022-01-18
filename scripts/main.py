@@ -71,8 +71,4 @@ def plot_cum_chart(df):
 
     graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
-    return graphJSON, fig.show()
-
-if __name__ == '__main__':
-    df = load_data('/Users/e.saurov/PycharmProjects/sports_challenge/sports_challenge_dash/data/event1.xlsx')
-    plot_cum_chart(df)
+    return graphJSON
