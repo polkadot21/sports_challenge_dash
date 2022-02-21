@@ -58,7 +58,7 @@ def plot_cum_chart(df):
     fig.update_layout(width=1100,
                                height=1800,
                                template=pio.templates['plotly_white'],
-                               title="Overall results after Event 1")
+                               title="Overall results after 5 events")
 
     for team in teams:
         trace = go.Scattergl(x=df_.index,
